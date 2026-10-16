@@ -41,7 +41,7 @@ public class Program {
             System.out.print(price * discount);
         }else
             discount = 0;
-        System.out.print(price);
+        System.out.print("Your total price is" + price);
     }
 
 }
