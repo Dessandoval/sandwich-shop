@@ -34,14 +34,14 @@ public class Program {
         int age = scanner.nextInt();
 
         if (age <= 17){
-           discount = .90;
+           discount = .10;
             System.out.print(price * discount);
         } else if (age >= 65) {
-            discount = .80;
+            discount = .20;
             System.out.print(price * discount);
         }else
             discount = 0;
-        System.out.print("Your total price is" + price);
+        System.out.print(price);
     }
 
 }
