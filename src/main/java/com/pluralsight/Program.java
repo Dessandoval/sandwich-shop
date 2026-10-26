@@ -15,9 +15,9 @@ public class Program {
         //a. 1: Regular: base price $5.45
         //b. 2: Large: base price $8.95
         if (sandwichSize == 1){
-            price = 5.45;
+            price = 5.45756;
         } else if (sandwichSize == 2) {
-            price = 8.95;
+            price = 8.95675;
         }else {
             System.out.println("Invalid sandwich size");
         }
@@ -49,7 +49,9 @@ public class Program {
             discount = .20;
         }
 
-        System.out.print(price * (1 - discount));
+        double total = price * (1- discount);
+
+        System.out.printf("Total: $%.2f", total);
     }
 
 }
